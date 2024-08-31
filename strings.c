@@ -1,19 +1,17 @@
 #include<stdio.h>
-int main()
+void main()
 {
-  int  array[10],i;
-  array[0]=1;
-  array[1]=2;
-  array[2]=3;
-  for(i=3;i<10;i++)
+  int n,i;
+  char str[50];
+  printf("enter n");
+  scanf("%d",&n);
+  printf("enter str");
+  scanf("%s",str);
+  printf("%s\n",str);
+  for(i=1;i<n;i++)
     {
-      printf("enter value for array[%d]:",i);
-      scanf("%d",&array[i]);
+      printf("%c\n",str[i]);
+    }
   }
-  for(i=3;i<10;i++)
-    {
-    printf("array[%d]=%d\n",i,array[i]);
-  }
-  return 0;
 
-}
+
